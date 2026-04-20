@@ -1,5 +1,17 @@
-// ---- Hero Visual: animated energy-flow grid -------------------------------
+// ═════════════════════════════════════════════════════════════════════════════
+// MARCELIS.IT COMPONENTS
+// ═════════════════════════════════════════════════════════════════════════════
+
+// ───────────────────────────────────────────────────────────────────────────
+// 1. IMPORTS & CONSTANTS
+// ───────────────────────────────────────────────────────────────────────────
+
 const { useEffect, useRef, useState, useMemo } = React;
+
+// ───────────────────────────────────────────────────────────────────────────
+// 2. HERO VISUAL - Animated Energy Flow Canvas
+// ───────────────────────────────────────────────────────────────────────────
+// Interactive animated visualization showing energy flow from solar to home
 
 function HeroVisual() {
   const canvasRef = useRef(null);
@@ -150,7 +162,11 @@ function HeroVisual() {
   );
 }
 
-// ---- IT Services ------------------------------------------------------------
+// ───────────────────────────────────────────────────────────────────────────
+// 3. IT SERVICES SECTION - Cards and Layout
+// ───────────────────────────────────────────────────────────────────────────
+// Service offerings: Support, Networks, Custom Dev, Consulting, Maintenance
+
 const SERVICES = [
   {
     n: '01',
@@ -221,7 +237,11 @@ function Services({ variant }) {
   );
 }
 
-// ---- Smart Energy Dashboard -------------------------------------------------
+// ───────────────────────────────────────────────────────────────────────────
+// 4. SMART ENERGY DASHBOARD - Flow Visualization & Statistics
+// ───────────────────────────────────────────────────────────────────────────
+// Real-time energy flow diagram with live power generation, consumption, and battery data
+
 function EnergyFlow() {
   const [t, setT] = useState(0);
   useEffect(() => {
@@ -420,7 +440,11 @@ function EnergySection({ variant }) {
   );
 }
 
-// ---- Crypto teaser ----------------------------------------------------------
+// ───────────────────────────────────────────────────────────────────────────
+// 5. CRYPTO TEASER - Price Ticker & Market Scanner
+// ───────────────────────────────────────────────────────────────────────────
+// Live crypto ticker with market data: BTC, ETH, SOL, ARB with price charts
+
 function CryptoCard() {
   const [t, setT] = useState(0);
   useEffect(() => { const id = setInterval(() => setT(x => x + 1), 1200); return () => clearInterval(id); }, []);
@@ -490,7 +514,11 @@ function CryptoCard() {
   );
 }
 
-// ---- Contact ----------------------------------------------------------------
+// ───────────────────────────────────────────────────────────────────────────
+// 6. CONTACT FORM - Message submission
+// ───────────────────────────────────────────────────────────────────────────
+// Form to send inquiries with name, email, subject, and message
+
 function Contact() {
   const [sent, setSent] = useState(false);
   return (
@@ -518,7 +546,11 @@ function Contact() {
   );
 }
 
-// ---- Tweaks panel -----------------------------------------------------------
+// ───────────────────────────────────────────────────────────────────────────
+// 7. TWEAKS PANEL - Live UI Controls
+// ───────────────────────────────────────────────────────────────────────────
+// Debug panel for testing color palettes and layout variants
+
 function TweaksPanel({ open, values, onChange }) {
   if (!open) return null;
   return (
@@ -576,6 +608,11 @@ function TweaksPanel({ open, values, onChange }) {
     </div>
   );
 }
+
+// ═════════════════════════════════════════════════════════════════════════════
+// 8. COMPONENT EXPORTS - Global accessibility
+// ═════════════════════════════════════════════════════════════════════════════
+// Make all components available globally for React rendering
 
 Object.assign(window, {
   HeroVisual, Services, EnergySection, CryptoCard, Contact, TweaksPanel,
