@@ -495,28 +495,6 @@ function Contact() {
   const [sent, setSent] = useState(false);
   return (
     <div className="contact-grid">
-      <div className="glass contact-card">
-        <div className="eyebrow" style={{ marginBottom: 24 }}>Directe lijn</div>
-        <div className="contact-row"><span className="k">E-mail</span><span className="v">hallo@marcelis.it</span></div>
-        <div className="contact-row"><span className="k">Telefoon</span><span className="v">+31 6 00 00 00 00</span></div>
-        <div className="contact-row"><span className="k">Werkgebied</span><span className="v">Nederland · remote + on-site</span></div>
-        <div className="contact-row"><span className="k">Reactietijd</span><span className="v" style={{ color: 'var(--good)' }}>● meestal &lt; 4 uur</span></div>
-        <div className="contact-row"><span className="k">KvK</span><span className="v">00 000 000</span></div>
-        <div style={{ marginTop: 32 }}>
-          <div style={{
-            padding: 18, borderRadius: 14,
-            background: 'rgba(0,127,255,0.06)',
-            border: '1px solid rgba(0,127,255,0.2)',
-            fontSize: 13.5, color: 'var(--text-dim)',
-          }}>
-            <span style={{ color: 'var(--brand-soft)', fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.08em' }}>
-              TIP ·
-            </span>{' '}
-            Stuur bij een probleem gerust een korte video of screenshot mee — scheelt tijd aan beide kanten.
-          </div>
-        </div>
-      </div>
-
       <form className="glass contact-card" onSubmit={e => { e.preventDefault(); setSent(true); }}>
         <div className="eyebrow" style={{ marginBottom: 24 }}>Stuur een bericht</div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
