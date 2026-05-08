@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — RijsTijd</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <style>
+    :root {
+      --bg-0: #0b0f1c;
+      --bg-1: #10152a;
+      --bg-2: #161c36;
+      --surface: rgba(32, 40, 70, 0.55);
+      --border: rgba(160, 190, 255, 0.18);
+      --text: #ffffff;
+      --text-dim: #c2cae2;
+      --text-faint: #8a94b4;
+      --brand: #007fff;
+      --brand-soft: #5fb0ff;
+      --brand-glow: rgba(0, 127, 255, 0.55);
+      --good: #4be29a;
+      --warn: #f5a623;
+      --font-display: 'Space Grotesk', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg-0);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .bg-field {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(900px 600px at 15% -5%, rgba(0, 127, 255, 0.18), transparent 60%),
+        radial-gradient(800px 500px at 90% 10%, rgba(0, 0, 255, 0.16), transparent 60%),
+        linear-gradient(180deg, #0b0f1c 0%, #0f152a 40%, #0b0f1c 100%);
+    }
+
+    main {
+      position: relative; z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+    }
+
+    .logo-link {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--brand-soft);
+      text-decoration: none;
+      margin-bottom: 56px;
+      opacity: 0.8;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 16px;
+      background: linear-gradient(135deg, #ffffff 30%, var(--brand-soft));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: var(--text-dim);
+      margin: 0 0 48px;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--brand-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 40px 0 16px;
+    }
+
+    .faq {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .faq-item.warn {
+      border-color: rgba(245, 166, 35, 0.3);
+    }
+
+    .faq-item.warn strong {
+      color: var(--warn);
+    }
+
+    .contact-box {
+      background: rgba(0, 127, 255, 0.08);
+      border: 1px solid rgba(95, 176, 255, 0.25);
+      border-radius: 12px;
+      padding: 28px 28px;
+      margin-top: 8px;
+    }
+
+    .contact-box p {
+      margin: 0 0 6px;
+      font-size: 15px;
+      color: var(--text-dim);
+    }
+
+    .contact-box a {
+      color: var(--brand-soft);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .response-time {
+      font-size: 13px;
+      color: var(--text-faint);
+      margin: 12px 0 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0 32px;
+    }
+
+    .footer {
+      font-size: 13px;
+      color: var(--text-faint);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-field"></div>
+  <main>
+    <a class="logo-link" href="/">marcelis.it</a>
+
+    <h1>RijsTijd – Support</h1>
+    <p class="intro">Heb je een vraag of probleem met RijsTijd? We helpen je graag verder.</p>
+
+    <h2>Veelgestelde vragen</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <strong>De timer gaat niet af terwijl de app op de achtergrond staat.</strong>
+        <p>Zorg dat meldingen zijn ingeschakeld voor RijsTijd in je telefooninstellingen.</p>
+      </div>
+      <div class="faq-item warn">
+        <strong>Mijn recept is verdwenen.</strong>
+        <p>Verwijder de app niet zonder een back-up — je recepten worden lokaal opgeslagen op je apparaat en kunnen niet worden hersteld na verwijdering.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Hoe voeg ik een eigen recept toe?</strong>
+        <p>Tik op het plusje op het startscherm en volg de stappen.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Hoe werkt premium?</strong>
+        <p>Premium ontgrendelt extra functies. Tik op 'Premium' in de app voor actuele mogelijkheden en prijzen.</p>
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p>Kom je er niet uit? Stuur een e-mail naar:</p>
+      <p><a href="mailto:rijstijd@marcelis.it">rijstijd@marcelis.it</a></p>
+      <p class="response-time">We streven ernaar binnen 2 werkdagen te reageren.</p>
+    </div>
+
+    <hr>
+
+    <p class="footer"><em>RijsTijd is ontwikkeld door Marcelis.it.</em></p>
+  </main>
+</body>
+</html>
