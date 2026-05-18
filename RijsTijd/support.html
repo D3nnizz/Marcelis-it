@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — RijsTijd</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap">
+  <style>
+    :root {
+      --bg:          #F5ECD7;
+      --card:        #FDF6E9;
+      --card-alt:    #F0E2C8;
+      --primary:     #8B5E3C;
+      --primary-dk:  #4A2E1A;
+      --primary-lt:  #C49A6C;
+      --text:        #2C1A0E;
+      --text-muted:  #7A5C3E;
+      --border:      #D4B896;
+      --border-lt:   #EAD9C0;
+      --success:     #5C8C4A;
+      --success-bg:  #EDF6E8;
+      --timer:       #C8902A;
+      --timer-bg:    #FFF3DC;
+      --danger:      #B84A3A;
+      --danger-bg:   #F5E0DC;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 24px 100px;
+    }
+
+    .logo-link {
+      display: inline-block;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--primary);
+      text-decoration: none;
+      margin-bottom: 48px;
+      opacity: 0.85;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--primary-dk);
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin: 0 0 48px;
+    }
+
+    h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary-lt);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 36px 0 12px;
+    }
+
+    .faq {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: var(--card);
+      border: 1px solid var(--border-lt);
+      border-radius: 12px;
+      padding: 18px 22px;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary-dk);
+      margin-bottom: 6px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .faq-item.warn {
+      background: var(--danger-bg);
+      border-color: rgba(184, 74, 58, 0.25);
+    }
+
+    .faq-item.warn strong { color: var(--danger); }
+
+    .faq-item.tip {
+      background: var(--timer-bg);
+      border-color: rgba(200, 144, 42, 0.3);
+    }
+
+    .faq-item.tip strong { color: var(--timer); }
+
+    .contact-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 8px;
+    }
+
+    .contact-box p {
+      margin: 0 0 6px;
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    .response-time {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 12px 0 0;
+      font-style: italic;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0 32px;
+    }
+
+    .footer {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="logo-link" href="/">🍞 RijsTijd</a>
+
+    <h1>Support</h1>
+    <p class="intro">Heb je een vraag of probleem met RijsTijd? We helpen je graag verder.</p>
+
+    <h2>Veelgestelde vragen</h2>
+    <div class="faq">
+
+      <div class="faq-item">
+        <strong>De timer gaat niet af terwijl de app op de achtergrond staat.</strong>
+        <p>Zorg dat meldingen zijn ingeschakeld voor RijsTijd in je telefooninstellingen. Ga naar Instellingen → RijsTijd → Meldingen en zet deze aan.</p>
+      </div>
+
+      <div class="faq-item warn">
+        <strong>Mijn recept is verdwenen.</strong>
+        <p>Recepten worden lokaal opgeslagen op je apparaat. Verwijder de app niet zonder back-up, want die gegevens zijn niet herstelbaar. Met een Premium-abonnement worden je recepten automatisch gesynchroniseerd naar de cloud — zo ben je altijd gedekt.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Hoe voeg ik een eigen recept toe?</strong>
+        <p>Tik op "+ Recept" op het startscherm, geef het een naam en omschrijving, en voeg daarna stappen, ingrediënten en timers toe vanuit het receptoverzicht.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Hoe werkt Premium?</strong>
+        <p>Premium geeft je toegang tot onbeperkt eigen recepten, automatische synchronisatie tussen apparaten en cloudback-up. Tik op je accounticoon rechtsboven op het startscherm om te upgraden.</p>
+      </div>
+
+      <div class="faq-item tip">
+        <strong>Hoe synchroniseer ik mijn recepten naar een ander apparaat?</strong>
+        <p>Je hebt een Premium-abonnement nodig en een account (Apple of Google). Log in via het accounticoon rechtsboven → kies Apple of Google → je recepten worden automatisch gesynchroniseerd bij het inloggen.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Hoe beheer of annuleer ik mijn abonnement?</strong>
+        <p>iOS: Instellingen → Apple ID → Abonnementen → RijsTijd.<br>
+           Android: Google Play Store → Account → Abonnementen → RijsTijd.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Ik wil mijn account en gegevens verwijderen.</strong>
+        <p>Stuur een e-mail naar <a href="mailto:rijstijd@marcelis.it">rijstijd@marcelis.it</a> met het verzoek je account te verwijderen. We verwerken dit binnen 5 werkdagen.</p>
+      </div>
+
+    </div>
+
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p>Kom je er niet uit? Stuur een e-mail naar:</p>
+      <p><a href="mailto:rijstijd@marcelis.it">rijstijd@marcelis.it</a></p>
+      <p class="response-time">We streven ernaar binnen 2 werkdagen te reageren.</p>
+    </div>
+
+    <hr>
+
+    <p class="footer">RijsTijd is ontwikkeld door <a href="https://marcelis.it" style="color:var(--primary);">Marcelis.it</a>.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacybeleid — RijsTijd</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap">
+  <style>
+    :root {
+      --bg:          #F5ECD7;
+      --card:        #FDF6E9;
+      --card-alt:    #F0E2C8;
+      --primary:     #8B5E3C;
+      --primary-dk:  #4A2E1A;
+      --primary-lt:  #C49A6C;
+      --text:        #2C1A0E;
+      --text-muted:  #7A5C3E;
+      --border:      #D4B896;
+      --border-lt:   #EAD9C0;
+      --success:     #5C8C4A;
+      --success-bg:  #EDF6E8;
+      --timer:       #C8902A;
+      --timer-bg:    #FFF3DC;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 24px 100px;
+    }
+
+    .logo-link {
+      display: inline-block;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--primary);
+      text-decoration: none;
+      margin-bottom: 48px;
+      opacity: 0.85;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--primary-dk);
+      margin: 0 0 6px;
+      line-height: 1.2;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0 0 40px;
+    }
+
+    .intro {
+      background: var(--success-bg);
+      border: 1px solid rgba(92, 140, 74, 0.3);
+      border-radius: 12px;
+      padding: 18px 22px;
+      color: var(--success);
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary-lt);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 36px 0 12px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    ul li {
+      position: relative;
+      padding: 12px 16px 12px 40px;
+      background: var(--card);
+      border: 1px solid var(--border-lt);
+      border-radius: 10px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--primary-lt);
+    }
+
+    ul.local li::before { background: var(--success); }
+    ul.third li::before { background: var(--timer); }
+
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin: 0 0 14px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 8px;
+      padding-left: 4px;
+      font-style: italic;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .contact a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="logo-link" href="/">🍞 RijsTijd</a>
+
+    <h1>Privacybeleid</h1>
+    <p class="updated">Laatst bijgewerkt: 16 mei 2026</p>
+
+    <div class="intro">
+      RijsTijd verzamelt zo min mogelijk gegevens. Alles wat je bakt, blijft van jou.
+    </div>
+
+    <h2>Gegevens die lokaal op je apparaat worden opgeslagen</h2>
+    <ul class="local">
+      <li>Recepten die je aanmaakt (ingrediënten, stappen, timers)</li>
+      <li>Foto's die je koppelt aan recepten (opgeslagen in de privémap van de app)</li>
+      <li>Actieve timersessies</li>
+      <li>Je abonnementsstatus</li>
+    </ul>
+    <p class="note">Deze gegevens verlaten je apparaat niet, tenzij je inlogt met een account (zie hieronder).</p>
+
+    <h2>Account en synchronisatie (optioneel, alleen Premium)</h2>
+    <p>Als je kiest voor een Premium-abonnement en inlogt met Apple of Google, worden je recepten gesynchroniseerd via Firebase (Google). Hierbij worden de volgende gegevens verwerkt:</p>
+    <ul class="third">
+      <li>Een anonieme gebruikers-ID (Firebase UID)</li>
+      <li>Je naam en e-mailadres (alleen als je inlogt via Apple of Google)</li>
+      <li>De recepten die je hebt aangemaakt (zonder foto's)</li>
+    </ul>
+    <p class="note">Foto's worden nooit gesynchroniseerd en blijven altijd lokaal op je apparaat.</p>
+
+    <h2>Abonnementen en betalingen</h2>
+    <p>Betalingen worden verwerkt door de Apple App Store of Google Play. Wij ontvangen geen betaal- of factuurgegevens. Abonnementsbeheer verloopt via RevenueCat, die je abonnementsstatus bijhoudt gekoppeld aan je Firebase UID.</p>
+
+    <h2>Wat we NIET verzamelen</h2>
+    <ul>
+      <li>Geen locatiegegevens</li>
+      <li>Geen analytics of gebruiksregistratie</li>
+      <li>Geen advertentie-ID's</li>
+      <li>Geen gegevens van gebruikers zonder account</li>
+    </ul>
+
+    <h2>Toestemmingen</h2>
+    <ul>
+      <li><strong>Camera / Fotobibliotheek</strong> — alleen om foto's toe te voegen aan je recepten. Er worden geen afbeeldingen geüpload.</li>
+      <li><strong>Meldingen</strong> — alleen om je te waarschuwen wanneer een timer afloopt (lokaal, geen push-meldingen).</li>
+    </ul>
+
+    <h2>Gegevens verwijderen</h2>
+    <p>Je kunt je account en alle bijbehorende gegevens laten verwijderen door een e-mail te sturen naar <a href="mailto:rijstijd@marcelis.it" style="color:var(--primary);font-weight:700;">rijstijd@marcelis.it</a>. Lokale recepten worden verwijderd wanneer je de app verwijdert.</p>
+
+    <hr>
+
+    <p class="contact">Vragen? <a href="mailto:rijstijd@marcelis.it">rijstijd@marcelis.it</a></p>
+  </main>
+</body>
+</html>
